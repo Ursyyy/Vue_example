@@ -11,9 +11,8 @@ import Messages from './components/Messages'
 import Notification from './components/Notification'
 import NotifySettings from './components/NotifySettings'
 import PaymentCards from './components/PaymentCards'
-import FAQPage from "./components/FAQPage";
-import Legal from "./components/Legal";
-//import PaymentForm from './components/PaymentForm'
+import FAQPage from "./components/FAQPage"
+import Legal from "./components/Legal"
 import Payment from './components/Payment'
 import Verification from './components/Verification'
 import MainSlider from './components/MainSlider'
@@ -24,8 +23,7 @@ import Settings from './components/Settings'
 import Follower from './components/Followers'
 
 import Management from './components/SubscriptionManagement'
-import Login from './components/auth/Login'
-import Register from './components/auth/Register'
+
 import AuthForm from './components/auth/AuthForm'
 import Reset from './components/auth/passwords/Reset'
 
@@ -82,14 +80,9 @@ const router = new VueRouter({
         },
         {
             name: 'auth',
-            path: '/auth',///:login',
-            component: AuthForm//Login
+            path: '/auth',
+            component: AuthForm
         },
-       /* {
-            name: 'register',
-            path: '/auth/register',
-            component: AuthForm//Register
-        },*/
         {
             name: 'forgot_password',
             path: '/forgot_password',
@@ -109,7 +102,7 @@ const router = new VueRouter({
             name: 'chats',
             path: '/messages/chats',
             component: Chats
-        },  //chat
+        }, 
         {
             name: 'messages',
             path: '/chat/:id',
